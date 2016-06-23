@@ -1,1 +1,3 @@
-Testing --amend command
+--amend:- command for last comment change
+
+reset Head file_name :- for last added file(Changes are not revert back in the file) to stating but not commit, So we don't want in the staging area we revert back to working dir with last one
