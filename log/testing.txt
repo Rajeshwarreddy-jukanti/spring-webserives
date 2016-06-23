@@ -4,3 +4,6 @@ reset Head file_name :- for last added file(Changes are not revert back to the f
 
 Checkout -- file_name :- for file changes in inside are revert back but not added to staging area, So we revert back with last one changes(untracked file are removed)
 
+git checkout -b branch_name or git checkout branch_name :- Create branch and switch to branch
+git branch : list of all branches shows
+git push github branch_name : create a branch in remote repo
