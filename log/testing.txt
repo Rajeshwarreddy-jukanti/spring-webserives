@@ -2,6 +2,5 @@
 
 reset Head file_name :- for last added file(Changes are not revert back to the file) to staging but not committed, So we don't want in the staging area & we revert back to working dir with last one
 
-Checkout -- file_name :- for file changes in inside are revert back to the working dir but not committed, So we revert back to working dir with last one changes
+Checkout -- file_name :- for file changes in inside are revert back but not added to staging area, So we revert back with last one changes(untracked file are removed)
 
-Next
