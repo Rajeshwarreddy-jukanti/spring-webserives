@@ -26,3 +26,5 @@ show list of tags
 
 annotated tag created for previous commit
 Command :git tag v1.4 commit_hashcode
+
+git push origin_name tag_name : git does not push tags to remote servers so we will have to push explicitly by using this command 
