@@ -87,8 +87,11 @@ Search			Search the working directory for foo():						git grep "foo()"
 					GIT COMMANDS PRACTICES
 ---------------------------------------------------------------------------------------------------------------------------
 
+GIT stores a commit object that contains a pointer to the snapshot of the content you staged(when commit made) 
+git add README test.rb LICENSE
+git commit -m 'The initial commit of my project'
 
-
+When you create the commit by running git commit, Git checksums each subdirectory (in this case, just the root project directory) and stores those tree objects in the Git repository. Git then creates a commit object that has the metadata and a pointer to the root project tree so it can re-create that snapshot when needed.
 
 
 
@@ -125,18 +128,21 @@ git push origin_name tag_name : git does not push tags to remote servers so we w
 
 git push origin_name --tags  :command for push all tags at time
 
+git checkout -b branchname tagname :command for get the tag from remote
 
 
+Git alias : 
+git config --global alias.co checkout 
+git config --global alias.br branch 
+git config --global alias.ci commit
+git config --global alias.st status
 
+git config --global alias.unstage 'reset HEAD --' : Command for unstage a file and adding your own unstage alias to git 
+Ex: git unstage fiel_name (git reset HEAD -- file_name)
 
+git config --global alias.last 'log -1 HEAD' (git last)
 
-
-
-
-
-
-
-
+git config --global alias.visual '!gitl' (git visual or gitk) (create custmized commands)
 
 
 
