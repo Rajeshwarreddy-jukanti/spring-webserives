@@ -7,3 +7,22 @@ Checkout -- file_name :- for file changes in inside are revert back but not adde
 git checkout -b branch_name or git checkout branch_name :- Create branch and switch to branch
 git branch : list of all branches shows
 git push github branch_name : create a branch in remote repo
+
+fetch & pull & clone :
+Git fetch origin_name:just download the code from remote
+git pull branch_name : download and then merge that remote branch into your current branch
+git clone url_name :setup your local master brach to track the remote branch(default branch)
+
+Tags: : It is ability to tag specific points in history as being impartant
+It use this finctionality to mark release mark(making an version of project)
+1)Annotated tags
+2)lieightweight tag
+
+create annotated tags:
+git tag -a v1.0
+create lightwieght tag :
+git tag v1.2-lw
+show list of tags
+
+annotated tag created for previous commit
+Command :git tag v1.4 commit_hashcode
